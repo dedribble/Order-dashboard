@@ -1,0 +1,528 @@
+@font-face {
+    font-family: emnify;
+    src: url('./mechanismoregular-p7ywa.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ body {
+     overflow: hidden;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 16px;
+}
+
+nav .menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: emnify;
+    font-size: 22px;
+    text-decoration: none;
+    color: #111;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .menu-logo > #logo {
+    letter-spacing: 3px;
+}
+
+nav .menu-logo a > svg {
+    width: 25px;
+    height: 25px;
+}
+
+nav .profile-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 30px;
+}
+
+nav .profile-area > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--icon-color);
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+nav .profile-area a svg {
+    display: grid;
+    place-items: center;
+    width: 25px; 
+    height: 25px;
+}
+
+nav .profile-area .pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav .profile-area .pro > .profile-image {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b8dae7;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav .profile-area .pro > .profile-image a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: -4px;
+    cursor: pointer;
+}
+
+nav .profile-area .pro > .profile-image a img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .profile-area .pro .profile-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav .profile-area .pro .profile-link:hover {
+    background-color: #f3f2f2;
+}
+
+nav .profile-area .pro .profile-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav .profile-area .pro .profile-link a svg {
+    width: 20px;
+    height: 20px;
+    color: var(--icon-color);
+}
+
+nav .profile-area .pro .profile-link > #dd-menu {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    
+}
+
+nav .profile-area .pro .profile-link > .show {
+    visibility: hidden;
+}
+
+nav .profile-area .pro .profile-link > #dd-menu a:hover {
+    background-color: #f3f2f2;
+}
+
+nav .profile-area .pro .profile-link > #dd-menu a {
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+}
+main {
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-template-rows: 1fr;
+}
+
+main > aside {
+    width: 100%;
+}
+
+main > aside > .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #f3f2f2;
+}
+
+main > aside > .top > ul li {
+    list-style: none;
+    padding: 8px 8px 8px 30px  ;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--icon-color) ;
+    cursor: pointer;
+}
+
+main > aside > .top > ul .active {
+    border: 4px solid #eee;
+    border-left: none;
+    color: orangered;
+    background-color: #ffdde1;
+}
+
+main > aside > .top > ul li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+main > aside > .middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+main > aside > .middle > ul li {
+    list-style: none;
+    padding: 10px 10px 10px 30px  ;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--icon-color) ;
+    cursor: pointer;
+}
+
+main > aside > .middle > ul li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    color: var(--icon-color);
+}
+
+main > aside > .middle > .evaluation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff7e7;
+    margin: 20px 6px;
+    border-radius: 4px;
+    padding: 20px 26px;
+}
+
+main > aside > .middle > .evaluation > .title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main > aside > .middle > .evaluation > .title svg {
+    width: 20px;
+    height: 20px;
+    color: var(--icon-color);
+    margin-right: 20px;
+}
+
+main > aside > .middle > .evaluation > .progress {
+    width: 166px;
+    height: 5px;
+    background-color: #e4e4e4;
+    margin: 12px 0 8px 38px;
+    border-radius: 16px;
+    position: relative;
+}
+
+main > aside > .middle > .evaluation > .progress::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 5px;
+    border-radius: 16px;
+    background-color: orangered;
+}
+
+main > aside > .middle > .evaluation > small {
+    margin: 0 0 0 38px ;
+    font-size: 14px;
+    color: #aaa
+}
+
+main > aside > .middle > .evaluation > p {
+    text-transform: uppercase;
+    margin: 30px 0 0px 38px;
+    font-size: 16px;
+    color: orangered;
+    font-weight: bold;
+}
+
+main > aside > footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    margin: 10px 20px;
+}
+
+main > aside > footer .icon{
+display: flex;
+ margin-right: 10px;
+ color: var(--icon-color);
+ position: relative;
+ top: -8px;
+}
+
+main > aside > footer > .icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+main > aside > footer .help {
+    display: flex;
+    flex-direction: column;
+}
+
+main > aside > footer .help a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+main > aside > footer .help p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main > section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 0 36px;
+}
+
+main > section h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+main > section > .order-items {
+    display: grid;
+    grid-template-rows: 60px 230px auto;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+}
+
+main > section > .order-items > .order-details {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f3f2f2;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+main > section > .order-items > .order-details >.details {
+display: flex;
+flex-direction: column;
+margin-right: 80px;
+}
+
+main > section > .order-items > .order-details >.details > span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+main > section > .order-items > .order-details >.details > p {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+main > section > .order-items > .order-details >.details:last-child {
+    position: absolute;
+    right: 0px;
+    margin-right: 30px;
+}
+
+main > section > .order-items > .order-details >.details:last-child p {
+    align-self: flex-end;
+}
+
+main > section > .order-items > .sim {
+    display: flex;
+    padding: 40px;
+    position: relative;
+}
+
+main > section > .order-items > .sim > .sim-card {
+    width: 250px;
+    height: 150px;
+    margin-right: 26px;
+}
+
+main > section > .order-items > .sim > .sim-card img {
+    width: 100%;
+    height: 100%
+}
+
+main > section > .order-items > .sim > .four {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > .order-items > .sim > .four > .top {
+    display: flex;
+    align-items: center;
+    margin: 8px 0 16px 0;
+}
+
+main > section > .order-items > .sim > .four > .top p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main > section > .order-items > .two > .four > .top p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+main > section > .order-items > .sim > .four > .top .shipdate {
+    font-size: 14px;
+    color: mediumseagreen;
+    background-color: #e7ffe7;
+    border-radius: 50px;
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+
+main > section > .order-items > .two > .four > .top .shipdate {
+    font-size: 14px;
+    color: #222;
+    background-color: #eee;
+    border-radius: 50px;
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+
+main > section > .order-items > .sim > .four > .content {
+    display: grid;
+    margin-top: 8px;
+}
+
+main > section > .order-items > .sim > .four > .content p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+main > section > .order-items > .sim > .quantity {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    
+}
+
+main > section > .order-items > .sim > .quantity > .numbers {
+    color: #666;
+    display: flex;
+    align-items: center;
+    /* align-items: flex-start; */
+}
+
+main > section > .order-items > .sim > .quantity > .numbers > .amount {
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    width: 45px;
+    height: 45px;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:0 26px 0 14px;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .btns {
+    display: grid;
+    place-items: center;
+    border: 1px solid red;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .btns a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .register {
+    background-color: orangered;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .register a {
+    color: white;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .archive {
+    border: 1px solid #ccc;
+}
+
+main > section > .order-items > .sim > .quantity > .ctas > .archive a {
+    color: #111;
+    font-weight: 600;
+}
+
+main > section > .order-items > .estimated {
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+main > section > .order-items > .estimated p {
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+main > section > .order-items > .estimated p > span {
+    text-transform: capitalize;
+    color: #111;
+    font-weight: bold;
+    margin-left: 6px;
+}
